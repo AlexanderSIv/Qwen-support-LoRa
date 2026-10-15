@@ -16,7 +16,7 @@ GPU (RTX 2070 Super, 8 GB VRAM).
 
 ## Демо
 
-![Demo](docs/demo_screenshot.png)
+![Demo](docs/demo_gradio_screenshot.png)
 
 ## Качественное сравнение
 
