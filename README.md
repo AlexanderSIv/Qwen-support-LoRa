@@ -153,7 +153,28 @@ Bitext — single-turn Q&A датасет. Модель учится на рас
 
 ## Воспроизведение
 
-### Требования
+### Установка
+
+#### 1. PyTorch (отдельно)
+
+PyTorch устанавливается отдельно, потому что версия зависит от платформы и CUDA.
+
+**Windows / Linux с CUDA:** по инструкции с (официального сайта)[https://pytorch.org/get-started/locally/] для вашей версии CUDA
+
+**CPU-only** (медленно, только для отладки):
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+
+**Проверка**:
+```python
+import torch
+print(torch.__version__)
+print(torch.cuda.is_available())       # должно быть True
+print(torch.cuda.get_device_name(0))   # должно вывести название вашего GPU
+```
+
+#### 2. Остальные зависимости
 
 ```bash
 pip install -r requirements.txt
